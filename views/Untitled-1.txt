@@ -1,0 +1,40 @@
+<%= gamesInfo[%>"+i+"<%].game_image_url %>
+<%= gamesInfo[%>"+i+"<%].game_name %>
+p.appendChild("<%= gamesInfo[%>"+i+"<%].game_name %>");
+  function moreGames(){
+            for(let i = 0; i<30; i++){
+
+                a.setAttribute("class", "a_gameList");
+                a.setAttribute("href", "http://localhost:3000/game?index_url_code="+i);
+                center.setAttribute("class", "whiteBackground");
+                img.setAttribute("src", "<%= gamesInfo[1].game_image_url %>");
+
+                a.appendChild(li);
+                li.appendChild(center);
+                center.appendChild(img);
+                center.appendChild(p);
+                
+                ul.appendChild(a);
+            
+            }
+        }
+       
+
+           <script>
+        let a = document.createElement("a");
+        let li = document.createElement("li");
+        let center = document.createElement("center");
+        let p = document.createElement("p");
+        let img = document.createElement("img");
+        let ul = document.getElementById("gameUl");
+
+        
+      
+
+
+
+
+       
+
+
+        </script>

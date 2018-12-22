@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>WOZ 17 GAMES</title>
+    <link rel="icon" href="style/icon.png">
+
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    
+
+
+</head>
+<body>
+    <header>
+        <a href="/"><img id="logo" src="style/logo.png" height="60px"></a>
+    </header>
+    
+
+
+    <ul id="gameUl" class="gameList">
+            <% for(var i=0; i<gamesInfo.length; i++) {%>
+                    <a class="a_gameList" href="http://localhost:3000/game?index_url_code=<%=i%>"><li><center class="whiteBackground"><img class="lazyload" data-src="<%= gamesInfo[i].game_image_url %>"><p><%= gamesInfo[i].game_name %></p></center></li></a>
+                 <% } %>
+    </ul>
+
+
+    <script src="https://unpkg.com/lazysizes@4.0.1/lazysizes.js"></script>
+    <h6 style="margin-left:50px;">© 2019 woz17.herokuapp.com</h6>
+</body>
+</html>

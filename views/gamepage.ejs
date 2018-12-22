@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>WOZ 17 GAMES</title>
+    <link rel="icon" href="style/icon.png">
+
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+
+</head>
+<body>
+    <header>
+        <a href="/"><img id="logo" src="style/logo.png" height="60px"></a>
+    </header>
+    
+    <div style="position:relative; margin: auto; box-shadow: 1px -1px 20px 0px #2f2e2e42; position: absolute; margin-left: 50px; margin-top:30px;">
+        <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="https://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="712" height="490" id="flash-content" align="middle" class="item-direct-container resizable afgv-item" style="display: block; height: 490px;">
+                <param name="allowScriptAccess" value="never">
+                <param name="movie" value="https://img-cf.y8.com/cloud/y8-flash-game/contents/item_versions/flash_games/23851/original/the_forest_temple.swf?1521386112">
+                <param name="quality" value="high">
+                <param name="wmode" value="window">
+                <param name="allowfullscreen" value="false">
+                <param name="allowfullscreeninteractive" value="false">
+                <param name="fullScreenAspectRatio" value="">
+                <param name="quality" value="">
+                <param name="play" value="true">
+                <param name="loop" value="true">
+                <param name="menu" value="">
+                <param name="hasPriority" value="true">
+                <embed src="<%= gamesInfo[index_url_code.index_url_code].game_code %>" class="item-direct-container resizable afgv-item" width="712" height="490" id="gamefileEmbed" name="flash-content" align="middle" wmode="window" allowfullscreen="false" allowfullscreeninteractive="false" fullscreenaspectratio="" quality="high" play="true" loop="true" menu="" allowscriptaccess="never" haspriority="true" type="application/x-shockwave-flash" pluginspage="https://www.adobe.com/go/getflashplayer" style="display: block; height: 490px;">
+        </object>
+        <div style="position:relative; margin: auto; box-shadow: 1px -1px 20px 0px #2f2e2e42; position: absolute; margin-top: 10px; background-color: white; width: 100%;"> <h3 style="margin-left:10px;"><%= gamesInfo[index_url_code.index_url_code].game_name %></h3> </div>
+    </div>
+
+
+    <div id="recommended"  > 
+        <h2 style="margin-left:10px;">Recommended for you</h2>
+        <ul id="gameUl" class="gameList">
+                <% for(var i=0; i<20; i++) {%>
+                        <a class="a_gameList" href="http://localhost:3000/game?index_url_code=<%=i%>"><li><center class="whiteBackground"><img class="lazyload" data-src="<%= gamesInfo[i].game_image_url %>"><p><%= gamesInfo[i].game_name %></p></center></li></a>
+                 <% } %>
+        </ul> 
+    </div>
+    <script src="https://unpkg.com/lazysizes@4.0.1/lazysizes.js"></script>
+
+
+    <h6 style="margin-left:50px;">© 2019 woz17.herokuapp.com</h6>
+</body>
+</html>

@@ -1,2 +1,2 @@
 # woz17
-Game plsatfoarm
+Game platform
