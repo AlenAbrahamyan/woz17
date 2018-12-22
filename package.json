@@ -3,15 +3,17 @@
   "version": "1.0.0",
   "description": "game platform",
   "main": "index.js",
-  "dependencies": {
-    "ejs": "^2.6.1",
-    "express": "^4.16.4"
-  },
-  "devDependencies": {},
+  
   "scripts": {
     "install": "npm install",
     "start": "node index.js"
   },
+  
   "author": "Alen Abrahamyan",
-  "license": "ISC"
+  "license": "ISC",
+  
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
 }
