@@ -20,7 +20,7 @@
 
     <ul id="gameUl" class="gameList">
             <% for(var i=0; i<gamesInfo.length; i++) {%>
-                    <a class="a_gameList" href="http://localhost:3000/game?index_url_code=<%=i%>"><li><center class="whiteBackground"><img class="lazyload" data-src="<%= gamesInfo[i].game_image_url %>"><p><%= gamesInfo[i].game_name %></p></center></li></a>
+                    <a class="a_gameList" href="https://woz17.herokuapp.com/game?index_url_code=<%=i%>"><li><center class="whiteBackground"><img class="lazyload" data-src="<%= gamesInfo[i].game_image_url %>"><p><%= gamesInfo[i].game_name %></p></center></li></a>
                  <% } %>
     </ul>
 
