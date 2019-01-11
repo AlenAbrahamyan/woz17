@@ -8,14 +8,22 @@
 
     <link rel="stylesheet" type="text/css" href="style/style.css">
 
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-6527505837927021",
+        enable_page_level_ads: true
+    });
+    </script>
+
 </head>
 <body>
     <header>
         <a href="/"><img id="logo" src="style/logo.png" height="60px"></a>
     </header>
     
-    <div style="position:relative; margin: auto; box-shadow: 1px -1px 20px 0px #2f2e2e42; position: absolute; margin-left: 50px; margin-top:30px;">
-        <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="https://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="712" height="490" id="flash-content" align="middle" class="item-direct-container resizable afgv-item" style="display: block; height: 490px;">
+    <div  style="position:relative; margin: auto; box-shadow: 1px -1px 20px 0px #2f2e2e42; position: absolute; margin-left: 5%; margin-top:30px;">
+        <object  classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="https://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0"   id="flash-content" align="middle" class="item-direct-container resizable afgv-item" >
                 <param name="allowScriptAccess" value="never">
                 <param name="movie" value="https://img-cf.y8.com/cloud/y8-flash-game/contents/item_versions/flash_games/23851/original/the_forest_temple.swf?1521386112">
                 <param name="quality" value="high">
@@ -28,7 +36,7 @@
                 <param name="loop" value="true">
                 <param name="menu" value="">
                 <param name="hasPriority" value="true">
-                <embed src="<%= gamesInfo[index_url_code.index_url_code].game_code %>" class="item-direct-container resizable afgv-item" width="712" height="490" id="gamefileEmbed" name="flash-content" align="middle" wmode="window" allowfullscreen="false" allowfullscreeninteractive="false" fullscreenaspectratio="" quality="high" play="true" loop="true" menu="" allowscriptaccess="never" haspriority="true" type="application/x-shockwave-flash" pluginspage="https://www.adobe.com/go/getflashplayer" style="display: block; height: 490px;">
+                <embed src="<%= gamesInfo[index_url_code.index_url_code].game_code %>" class="item-direct-container resizable afgv-item"  id="gamefileEmbed" name="flash-content" align="middle" wmode="window" allowfullscreen="false" allowfullscreeninteractive="false" fullscreenaspectratio="" quality="high" play="true" loop="true" menu="" allowscriptaccess="never" haspriority="true" type="application/x-shockwave-flash" pluginspage="https://www.adobe.com/go/getflashplayer" >
         </object>
         <div style="position:relative; margin: auto; box-shadow: 1px -1px 20px 0px #2f2e2e42; position: absolute; margin-top: 10px; background-color: white; width: 100%;"> <h3 style="margin-left:10px;"><%= gamesInfo[index_url_code.index_url_code].game_name %></h3> </div>
     </div>
@@ -43,8 +51,15 @@
         </ul> 
     </div>
     <script src="https://unpkg.com/lazysizes@4.0.1/lazysizes.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131352508-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('config', 'UA-131352508-1');
+    </script>
 
-    <h6 style="margin-left:50px;">© 2019 woz17.herokuapp.com</h6>
+<h6 style="margin-left: 5%;"> © 2019 woz17.herokuapp.com</h6>
 </body>
 </html>
