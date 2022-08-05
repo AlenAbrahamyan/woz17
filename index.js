@@ -3,7 +3,7 @@ const app = express()
 const port = process.env.PORT || 3000
 const fs = require("fs")
 const gamesInfo = JSON.parse(fs.readFileSync("games.json", "utf8"))
-console.log("You have " + gamesInfo.length + " games.")
+console.log("You have " + gamesInfo.length + " games!")
 
 app.set("view engine", "ejs")
 
