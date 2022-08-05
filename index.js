@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 
 app.get('/game', (req, res) => {
   res.render('gamepage', { gamesInfo: gamesInfo, index_url_code: req.query });
-  
+   
 });
  
 
