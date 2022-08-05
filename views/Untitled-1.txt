@@ -13,7 +13,7 @@ p.appendChild("<%= gamesInfo[%>"+i+"<%].game_name %>");
                 li.appendChild(center);
                 center.appendChild(img);
                 center.appendChild(p);
-                
+                //
                 ul.appendChild(a);
             
             }
