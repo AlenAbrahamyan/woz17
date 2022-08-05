@@ -12,7 +12,7 @@ app.use(express.static(__dirname))
 app.get("/", (req, res) => {
   res.render("index", { gamesInfo: gamesInfo, index_url_code: req.query })
 })
-
+/////
 app.get("/game", (req, res) => {
   res.render("gamepage", { gamesInfo: gamesInfo, index_url_code: req.query })
 })
