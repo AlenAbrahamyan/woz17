@@ -1,8 +1,8 @@
-let express = require("express")
-let app = express()
-let port = process.env.PORT || 3000
-let fs = require("fs")
-let gamesInfo = JSON.parse(fs.readFileSync("games.json", "utf8"))
+const express = require("express")
+const app = express()
+const port = process.env.PORT || 3000
+const fs = require("fs")
+const gamesInfo = JSON.parse(fs.readFileSync("games.json", "utf8"))
 console.log("You have " + gamesInfo.length + " games.")
 
 app.set("view engine", "ejs")
